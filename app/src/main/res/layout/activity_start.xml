@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Start">
+
+    <LinearLayout
+        android:layout_above="@+id/orderNowId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/edittextid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/round"
+                android:textCursorDrawable="@color/colorPrimaryDark"
+                android:drawableRight="@drawable/ic_search_black_24dp"
+                android:hint="search by name"
+                android:padding="5dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <ListView
+            android:layout_gravity="center"
+            android:dividerHeight="1dp"
+            android:divider="#FFFFFF"
+            android:id="@+id/listBuyerViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnCart"
+        android:visibility="gone"
+        android:src="@drawable/ic_shopping_basket_black_24dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:elevation="6dp"
+        android:layout_marginBottom="50dp"
+        app:layout_anchorGravity="bottom|right|end"
+        app:useCompatPadding="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:id="@+id/orderNowId"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Order Now"
+        android:textColor="#ffffff"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:progressTint="#000"
+            android:id="@+id/progressBarId"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleHorizontal"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

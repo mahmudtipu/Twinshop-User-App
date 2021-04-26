@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".CustomOrder">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/homeDeliveryId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/btn_bg_selector"
+                android:hint="Enter Product Name and Quantity/Size"/>
+
+            <Button
+                android:id="@+id/addItemButtomId"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:text="Add Item/Service"
+                android:drawableRight="@drawable/ic_shopping_basket_black_24dp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/food_description"
+                android:text="Added Item/Service : "
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/emptyId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="(empty)"
+                android:gravity="center"/>
+
+            <ListView
+                android:id="@+id/listId"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/orderId"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:text="Order Now"
+            android:textColor="#ffffff"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

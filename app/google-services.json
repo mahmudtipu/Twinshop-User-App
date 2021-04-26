@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "505362838341",
+    "firebase_url": "https://twinshop-9cabc.firebaseio.com",
+    "project_id": "twinshop-9cabc",
+    "storage_bucket": "twinshop-9cabc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505362838341:android:87e6d6d507e775ade3042c",
+        "android_client_info": {
+          "package_name": "store.twinshop.virtualmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505362838341-e3jhb155l82jl7kc48h80trotvj4t1me.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "store.twinshop.virtualmarket",
+            "certificate_hash": "ed09d006e45b2248c27bf7463a19e9efaffae93e"
+          }
+        },
+        {
+          "client_id": "505362838341-gno84s64qaliaj4hr7m4ahorb645t0sf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCshD0reXldNuTYPdFyERPEQseJr_9dW8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505362838341-gno84s64qaliaj4hr7m4ahorb645t0sf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
